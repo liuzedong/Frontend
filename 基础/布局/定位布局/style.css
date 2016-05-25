@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	/*color: white;*/
+	/* 让body成为相对定位点，其他内部标签以body为相对点 */
+	position: relative;
+}
+
+header {
+	/* 绝对定位的宽度的必须写的 */
+	width: 960px;
+	height: 120px;
+	background: DarkSalmon;
+	/* 相对于body的，绝对定位 begin */
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* 相对于body的，绝对定位 end */
+}
+
+aside {
+	width: 200px;
+	height: 500px;
+	background-color: DarkSeaGreen;
+	position: absolute;
+	top: 120px;
+	left: 0;
+}
+
+section {
+	width: 790px;
+	height: 500px;
+	background-color: DarkTurquoise;
+	position: absolute;
+	top: 120px;
+	right: 0;
+}
+
+footer {
+	width: 960px;
+	height: 120px;
+	background-color: DeepSkyBlue;
+	position: absolute;
+	top: 620px;
+	left: 0;
+}
