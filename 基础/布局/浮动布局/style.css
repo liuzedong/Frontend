@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+body {
+	width: 960px;
+	margin: 0 auto;
+	/*color: white;*/
+}
+
+header {
+	height: 120px;
+	background: BurlyWood;
+}
+
+aside {
+	width: 200px;
+	height: 500px;
+	background: Chocolate;
+	/* 使该模块左浮动 */
+	float: left;
+}
+
+section {
+	width: 760px;
+	height: 500px;
+	background: DarkBlue;
+	/* 使该模块右浮动 */
+	float: right;
+}
+
+footer {
+	height: 120px;
+	background: DarkKhaki;
+	/* 清除上面的浮动效果 */
+	clear: both;
+}
