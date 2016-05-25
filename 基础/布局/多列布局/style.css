@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+/* 加上厂商前缀，兼容其他浏览器 */
+div {
+	
+	/* 设置最小显示多宽，和最开始显示几列,有部分浏览器不支持，所以需要加上前缀的 */
+	columns: 200px 3;
+	/* 单独设置宽度 */
+	columns-width: 200px;
+	/* 单独设置显示的列数 */
+	columns-count: 3;
+	/* 设置每列之间的间距 */
+	columns-gap: 10px;
+	/* 设置每列中间的分割线 */
+	columns-rule: 2px dashed gray;
+	
+	/* 设置最小显示多宽，和最开始显示几列,有部分浏览器不支持，所以需要加上前缀的 */
+	-webkit-columns: 200px 3;
+	/* 单独设置宽度 */
+	-webkit-columns-width: 200px;
+	/* 单独设置显示的列数 */
+	-webkit-columns-count: 3;
+	/* 设置每列之间的间距 */
+	-webkit-columns-gap: 10px;
+	/* 设置每列中间的分割线 */
+	-webkit-columns-rule: 2px dashed gray;
+	
+	/* 设置最小显示多宽，和最开始显示几列,有部分浏览器不支持，所以需要加上前缀的 */
+	-moz-columns: 200px 3;
+	/* 单独设置宽度 */
+	-moz-columns-width: 200px;
+	/* 单独设置显示的列数 */
+	-moz-columns-count: 3;
+	/* 设置每列之间的间距 */
+	-moz-columns-gap: 10px;
+	/* 设置每列中间的分割线 */
+	-moz-columns-rule: 2px dashed gray;
+}
