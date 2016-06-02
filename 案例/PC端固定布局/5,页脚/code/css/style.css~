@@ -142,8 +142,8 @@ a {
 /*设置主体部分的大小以及间距*/
 #tour {
 	width: 1263px;
-	height: 1200px;
-	margin: 30px;
+	height: 1150px;
+	margin: 30px auto;
 	text-align: center;
 }
 
@@ -216,7 +216,7 @@ a {
 	top: 5px;
 }
 
-/*调整最后一个*/
+/*调整最后一个标记*/
 #tour .type {
 	width: 90px;
 	height: 25px;
@@ -230,4 +230,66 @@ a {
 	position: absolute;
 	top: 4px;
 	left: 4px;
+}
+
+/*底部元素页脚的整体样式*/
+#footer {
+	height: 360px;
+	background-color: #222;
+}
+
+/*编写页脚的上部分*/
+#footer .top {
+	width: 1263px;
+	height: 280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/*编写三个主体的通用样式，设置大小及改成內连块，以及靠左，最后，让所有块级元素內都向上垂直对齐*/
+#footer .block {
+	width: 410px;
+	height: 320px;
+	display: inline-block;
+	color: #ccc;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*修改主题的样式，比如合作伙伴这些*/
+#footer h2 {
+	font-weight: normal;
+	padding: 20px 0 0 20px;
+	font-size: 24px;
+}
+
+/*修改那个hr的线，然他变成虚线*/
+#footer hr {
+	width: 90%;
+	border: 1px dashed #333;
+}
+
+/*下面联系人等的样式*/
+#footer ul {
+	color: #666;
+	font-size: 18px;
+	text-indent: 20px;
+	line-height: 2;
+}
+
+#footer ul  li a {
+	color: #666;
+}
+
+#footer ul  li a:hover {
+	color: #000;
+}
+
+#footer .bottom {
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	color: #777;
+	background-color: #000;
+	border-top: 1px solid #444;
 }
