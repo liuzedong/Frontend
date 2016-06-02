@@ -1,0 +1,233 @@
+@charset "utf-8";
+
+/*去掉body,h1,ul标签的内外边距*/
+body,h1,ul,h2 {
+	margin: 0;
+	padding: 0;
+}
+
+/*将整体背景设置为白色*/
+body {
+	background-color: #fff;
+}
+
+/*去掉ul下li标签前面的圆点*/
+ul {
+	list-style: outside none none;
+}
+
+/*去掉a标签的下划线*/
+a {
+	text-decoration: none;
+}
+
+/*将主题标签隐藏*/
+.none {
+	display: none;
+}
+
+/*设置整体导航的宽度,高度,背景颜色*/
+#header {
+	width: 100%;
+	min-width: 1263px;
+	height: 70px;
+	background: #333;
+	/*此处的后加的，设置阴影并且层次最高，并设置成相对点*/
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+	position: relative;
+	z-index: 9999;
+}
+
+/*将导航进行宽度设置，以及居中，主要是导航的内部内容*/
+#header .center {
+	width: 1263px;
+	margin: 0 auto;
+}
+
+/*设置logo的大小，设置logo的背景图片，将标签的字向左移动9999像素，使字不显示，最后将logo左浮动*/
+#header .logo {
+	width: 240px;
+	height: 70px;
+	background-image: url(../img/logo.png);
+	text-indent: -9999px;
+	float: left;
+}
+
+/*将整个导航选项栏，设置大小，然后设置每个字中的间距，其实就是将li标签中的字，进行居中，设置字体大小，将整体有浮动*/
+#header .link {
+	width: 650px;
+	height: 70px;
+	line-height: 70px;
+	font-size: 18px;
+	float: right;
+}
+
+/*将导航选项，设置大小，将字体居中，每个li进行左浮动，就显示在一行了*/
+#header .link li {
+	width: 120px;
+	height: 70px;
+	text-align: center;
+	float: left;
+}
+
+/*将a标签设置成区块，就会自动适应li标签的大小，然后设置a标签的颜色为灰色*/
+#header .link a {
+	display: block;
+	color: #eee;
+}
+
+/*设置首页选项，默认就是黑色的。和。设置当鼠标移动到a标签上时，变成黑色的*/
+#header .active a,
+#header .link a:hover {
+	background-color: #000;
+}
+
+/*设置搜索区域的大小,设置该区域的图片，并设置成相对点*/
+#search {
+	width: 100%;
+	min-width: 1263px;
+	height: 600px;
+	background: url(../img/search.jpg) no-repeat center;
+	position: relative;
+}
+
+/*设置搜索框的大小和北京颜色，并且相对搜索区域的一半，然后使用margin进行微调，给搜索区域进行透明化，最后设置下菱角10px*/
+#search .center {
+	width: 600px;
+	height: 60px;
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -30px 0 0 -300px;
+	opacity: 0.6;
+	border-radius: 10px;
+}
+
+/*设置input搜索标签的样式，设置大小，设置边框的圆滑，设置搜索框所在的位置*/
+#search .search {
+	width: 446px;
+	height: 52px;
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -27px 0 0 -296px;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 24px;
+	padding: 0 10px;
+	outline: none;
+}
+
+/*设置button标签的样式，设置大小，设置所在的位置，设置当鼠标停留在上面的时候出现手的样式，字体加粗等*/
+#search .button {
+	width: 120px;
+	height: 54px;
+	background-color: #eee;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -27px 0 0 175px;
+	color: #666;
+	border: 1px solid #666;
+	border-radius: 10px;
+	font-size: 24px;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+/*设置主体部分的大小以及间距*/
+#tour {
+	width: 1263px;
+	height: 1200px;
+	margin: 30px;
+	text-align: center;
+}
+
+/*设置主体标签的大小，及字的间距，和字体颜色*/
+#tour .center h2{
+	margin: 10px 0;
+	font-size: 45px;
+	letter-spacing: 2px;
+	color: #666;
+}
+
+/*设置主体描述p标签字体的颜色和间距*/
+#tour .center p {
+	color: #666;
+	margin: 10px 0;
+}
+
+/*设置整个图文并茂的样式，设置边框和圆滑，内边距和外边距等，将下面的文字靠左，给当前对象做个相对点*/
+#tour figure {
+	border: 1px solid #ddd;
+	display: inline-block;
+	padding: 4px;
+	border-radius: 4px;
+	width: 380px;
+	margin: 15px 12px;
+	text-align: left;
+	position: relative;
+}
+
+/*图片进行剧中*/
+#tour figure img {
+	vertical-align: middle;
+}
+
+/*设置图片描述文字的颜色等*/
+#tour figure figcaption {
+	color: #777;
+	font-size: 14px;
+	padding: 7px 0 5px 0;
+	letter-spacing: 1px;
+	line-height: 1.5;
+}
+
+/*设置图片描述主要描述*/
+#tour .title {
+	color: #333;
+	font-weight: normal;
+}
+
+/*设置价格颜色和大小*/
+#tour .price {
+	color: #f60;
+	font-size: 14px;
+}
+
+/*设置价格大小*/
+#tour .price strong {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+/*设置满意度的标签位置，先进行右浮动，然后相对于自己定位，微调位置*/
+#tour .sat {
+	color: #999;
+	font-size: 13px;
+	font-style: normal;
+	float: right;
+	position: relative;
+	right: 5px;
+	top: 5px;
+}
+
+/*调整最后一个标记*/
+#tour .type {
+	width: 90px;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+	border-bottom-right-radius: 4px;
+	background-color: #59b200;
+	font-size: 14px;
+	color: #fff;
+	letter-spacing: 1px;
+	position: absolute;
+	top: 4px;
+	left: 4px;
+}
