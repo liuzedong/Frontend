@@ -1,0 +1,56 @@
+@charset "utf-8";
+
+/*设置标题栏的背景图片，以及让图片进行左上到右下的进行变暗的渐变*/
+#headline {
+	width: 100%;
+	min-width: 1263px;
+	height: 300px;
+	background: linear-gradient(to bottom right, rgba(0,0,0,0.7), rgba(0,0,0,0.0)), url(../img/headline.jpg) no-repeat center;
+}
+
+/*设置标题位置的大小以及居中*/
+#headline .center {
+	width: 1263px;
+	height: 300px;
+	margin: 0 auto;
+}
+
+/*整体的标题进行移位*/
+#headline hgroup {
+	padding: 100px 0 0 50px;
+}
+
+#headline h2 {
+	color: #eee;
+	font-size: 36px;
+	letter-spacing: 1px;
+}
+
+#headline h3 {
+	color: #eee;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+/*设置整个内容区域的空间*/
+#container {
+	width: 1263px;
+	height: 1200px;
+	margin: 30px auto;
+}
+
+/*设置左侧区域的大小*/
+#container .sidebar {
+	width: 320px;
+	height: 1200px;
+	background-color: #eee;
+	float: left;
+}
+
+/*设置右侧区域的大小*/
+#container .list {
+	width: 920px;
+	height: 1200px;
+	background-color: #ccc;
+	float: right;
+}
