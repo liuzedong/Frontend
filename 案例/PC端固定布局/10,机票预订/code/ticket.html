@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+	<head>
+		<meta charset="utf-8">
+		<title>PC端固定布局</title>
+		<link rel="stylesheet" type="text/css" href="css/basic.css">
+		<link rel="stylesheet" type="text/css" href="css/column.css">
+	</head>
+	<body>
+		<!--  -->
+		<!-- 导航使用该标签 -->
+		<header id="header">
+			<!-- 包含整体头部导航的部分 -->
+			<div class="center">
+				<!-- logo标签使用h1 -->
+				<h1 class="logo">瓢乘旅行社</h1>
+				<!-- nav指包含导航的选项部分，其他不需要添加 -->
+				<nav class="link">
+					<!-- h2标签进行改功能的描述，在页面不显示，隐藏 -->
+					<h2 class="none">网站导航</h2>
+					<!-- 导航标签使用ul标签，导航中的选项使用li标签，每个选项使用a标签包装 -->
+					<ul>
+						<li><a href="index.html">首页</a></li>
+						<li><a href="information.html">旅游咨询</a></li>
+						<li class="active"><a href="###">机票订购</a></li>
+						<li><a href="###">风景欣赏</a></li>
+						<li><a href="###">公司简介</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		
+		<!-- 消息咨询头部区域 -->
+		<div id="headline">
+			<div class="center">
+				<!-- HTML5推荐使用标签群组来管理标签 -->
+				<hgroup>
+					<h2>旅游咨询</h2>
+					<h3>介绍各种最新旅游信息，资讯要闻，景点攻略</h3>
+				</hgroup>
+			</div>
+		</div>
+		
+		<!-- 内容区域 -->
+		<!-- 侧栏和主栏 -->
+		<div id="container">
+			<aside class="sidebar">
+				<div class="sidbox recommend">
+					<h2>景点推荐</h2>
+					<!-- 此处对a标签的改造，添加ul标签 -->
+					<div class="tag">
+						<ul>
+							<li><a href="###">曼谷(12)</a></li>
+							<li><a href="###">东京(5)</a></li>
+							<li><a href="###">西双版纳(8)</a></li>
+							<li><a href="###">漓江(16)</a></li>
+							<li><a href="###">呼伦贝尔(4)</a></li>
+							<li><a href="###">首尔(9)</a></li>
+							<li><a href="###">巴厘岛(15)</a></li>
+							<li><a href="###">土耳其(22)</a></li>
+							<li><a href="###">夏威夷(5)</a></li>
+							<li><a href="###">巴厘岛(11)</a></li>
+							<li><a href="###">毛里求斯(7)</a></li>
+							<li><a href="###">吉普岛(4)</a></li>
+							<li><a href="###">希腊(18)</a></li>
+							<li><a href="###">法瑞意(8)</a></li>
+							<li><a href="###">马尔代夫(9)</a></li>
+							<li><a href="###">新西兰(16)</a></li>
+							<li><a href="###">埃及(11)</a></li>
+							<li><a href="###">迪拜(14)</a></li>
+							<li><a href="###">斯里兰卡(7)</a></li>
+							<li><a href="###">麦哈顿(3)</a></li>
+							<li><a href="###">大阪(15)</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="sidbox hot">
+					<h2>热卖旅游</h2>
+					<div class="figure">
+						<figure>
+							<img src="img/hot1.jpg" alt="曼谷-芭提雅 6 日游">
+							<figcaption>曼谷-芭提雅6日游</figcaption>
+						</figure>
+						<figure>
+							<img src="img/hot2.jpg" alt="马尔代夫双鱼 6 日游">
+							<figcaption>马尔代夫双鱼6日游</figcaption>
+						</figure>
+						<figure>
+							<img src="img/hot3.jpg" alt="海南双飞 5 日游">
+							<figcaption>海南双飞5日游</figcaption>
+						</figure>
+						<figure>
+							<img src="img/hot4.jpg" alt="富山大阪东京 8 日游">
+							<figcaption>富山大阪东京8日游</figcaption>
+						</figure>
+						<figure>
+							<img src="img/hot5.jpg" alt="法瑞意德 12 日游">
+							<figcaption>法瑞意德12日游</figcaption>
+						</figure>
+						<figure>
+							<img src="img/hot6.jpg" alt="巴厘岛 6 日半游">
+							<figcaption>巴厘岛6日半游</figcaption>
+						</figure>
+						<figure>
+							<img src="img/hot7.jpg" alt="塞舌尔迪拜 9 日游">
+							<figcaption>塞舌尔迪拜9日游</figcaption>
+						</figure>
+						<figure>
+							<img src="img/hot8.jpg" alt="花样土耳其 10 日游">
+							<figcaption>花样土耳其10日游</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="sidbox treasure">
+					<h2>旅游百宝箱</h2>
+					<div class="box">
+						<a href="###" class="trea1">天气预报</a>
+						<a href="###" class="trea2">火车票查询</a>
+						<a href="###" class="trea3">航空查询</a>
+						<a href="###" class="trea4">地铁线路查询</a>
+					</div>
+				</div>
+			</aside>
+			<!-- 左侧的机票订购 -->
+			<div class="list ticket">
+				<form action="###">
+					<h2>机票预订</h2>
+					<div class="type">
+						<p>航程类型 <mark>单程</mark> 往返</p>
+					</div>
+					<!-- 订票地点 -->
+					<div class="form left">
+						<p>
+							<label for="from_city">出发城市</label>
+							<input type="text" name="from_city" id="from_city" placeholder="城市名">
+						</p>
+						<p>
+							<label for="to_city">返回城市</label>
+							<input type="text" name="to_city" id="to_city" placeholder="城市名">
+						</p>
+					</div>
+					<!-- 订票时间 -->
+					<div class="form right">
+						<p>
+							<label for="from_date">出发时间</label>
+							<input type="text" name="from_date" id="from_date" placeholder="时间/日期">
+						</p>
+						<p>
+							<label for="to_date">返回时间</label>
+							<input type="text" name="to_date" id="to_date" placeholder="时间/日期">
+						</p>
+					</div>
+					<!-- 订票按钮 -->
+					<div class="form button">
+						<p>
+							<button type="submit" class="submit">订票</button>
+						</p>
+					</div>
+				</form>
+				
+				<!-- 最新机票的内容 -->
+				<div class="new">
+					<h2>最新机票</h2>
+					<ul>
+						<li>热门城市:</li>
+						<li>北京</li>
+						<li>上海</li>
+						<li>广州</li>
+						<li>深圳</li>
+						<li>重庆</li>
+						<li>成都</li>
+						<li>杭州</li>
+						<li>南京</li>
+					</ul>
+					<table>
+						<thead>
+							<tr>
+								<th>路线</th>
+								<th>日期</th>
+								<th>价格</th>
+								<th>税费</th>
+								<th>餐食</th>
+								<th>航班</th>
+								<th>预定</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>北京-成都</td>
+								<td>10-15</td>
+								<td class="price">¥745</td>
+								<td>¥50</td>
+								<td>有</td>
+								<td>春秋航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-上海</td>
+								<td>10-15</td>
+								<td class="price">¥479</td>
+								<td>¥45</td>
+								<td>无</td>
+								<td>南方航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-深圳</td>
+								<td>10-15</td>
+								<td class="price">¥561</td>
+								<td>¥52</td>
+								<td>有</td>
+								<td>西部航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-杭州</td><td>10-15</td>
+								<td class="price">¥378</td>
+								<td>¥36</td>
+								<td>无</td>
+								<td>天津航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-广州</td>
+								<td>10-15</td>
+								<td class="price">¥612</td>
+								<td>¥44</td>
+								<td>有</td>
+								<td>首都航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-重庆</td>
+								<td>10-15</td>
+								<td class="price">¥428</td>
+								<td>¥62</td>
+								<td>有</td>
+								<td>东方航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-昆明</td>
+								<td>10-15</td>
+								<td class="price">¥509</td>
+								<td>¥35</td>
+								<td>无</td>
+								<td>厦门航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-厦门</td>
+								<td>10-15</td>
+								<td class="price">¥893</td>
+								<td>¥73</td>
+								<td>有</td>
+								<td>深圳航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+							<tr>
+								<td>北京-长沙</td>
+								<td>10-15</td>
+								<td class="price">¥663</td>
+								<td>¥46</td>
+								<td>无</td>
+								<td>四川航空</td>
+								<td><a href="###" class="reserve">预定</a></td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<td colspan="7"><a href="###" class="more2">加载更多航班...</a></td>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!-- 底部的页脚部分 -->
+		<footer id="footer">
+			<!-- 底部说明部分 -->
+			<div class="top">
+				<div class="block left">
+					<h2>合作伙伴</h2>
+					<hr>
+					<ul>
+						<li><a href="###">途牛旅游网</a></li>
+						<li><a href="###">驴妈妈旅游网</a></li>
+						<li><a href="###">携程旅游</a></li>
+						<li><a href="###">中国青年旅行社</a></li>
+					</ul>
+				</div>
+				<div class="block center">
+					<h2>旅游 FAQ</h2>
+					<hr>
+					<ul>
+						<li><a href="###">旅游合同签订方式?</a></li>
+						<li><a href="###">儿童价是基于什么制定的?</a></li>
+						<li><a href="###">旅游的线路品质怎么界定的?</a></li>
+						<li><a href="###">单房差是什么?</a></li>
+						<li><a href="###">旅游保险有那些种类?</a></li>
+					</ul>
+				</div>
+				<div class="block right">
+					<h2>联系方式</h2>
+					<hr>
+					<ul>
+						<li>微博:weibo.com/liudong</li>
+						<li>邮件:java_liudong@163.com</li>
+						<li>地址:北京市-海淀区</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- 版权部分 -->
+		<div class="bottom">
+			Copyright © YCKU 瓢城旅行社 | 鄂ICP备15013174号 | 旅行社经营许可证: L-YC-BK12345
+		</div>
+		</footer>
+	</body>
+</html>
+
