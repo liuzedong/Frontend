@@ -1,32 +1,5 @@
 @charset "utf-8";
 
-/*去掉body,h1,ul标签的内外边距*/
-body,h1,ul,h2,h3 {
-	margin: 0;
-	padding: 0;
-}
-
-/*将整体背景设置为白色*/
-body {
-	background-color: #fff;
-}
-
-/*去掉ul下li标签前面的圆点*/
-ul {
-	list-style: outside none none;
-}
-
-/*去掉a标签的下划线*/
-a {
-	text-decoration: none;
-}
-
-/*将主题标签隐藏*/
-.none {
-	display: none;
-}
-
-
 /*设置搜索区域的大小,设置该区域的图片，并设置成相对点*/
 #search {
 	width: 100%;
